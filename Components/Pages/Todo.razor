@@ -1,3 +1,36 @@
 @page "/todo" // This is directive for the page URL
 @rendermode InteractiveServer // This directive specifies that the component can handle UI Events
 
+<h3>Todo</h3>
+
+@code 
+{
+    private List<TodoItem> todos = new();
+
+    string newTodo = "";
+
+    void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty;
+        }
+    }
+
+        
+}
+
+
+
+
+@* add button to add items to the list *@
+<input />
+<button>Add todo</button>
+
+
+@* newTodo string field bound to the input using @bind directive *@
+<input @bind="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
+
+
