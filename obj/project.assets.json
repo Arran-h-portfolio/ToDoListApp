@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net10.0": {
-      "Microsoft.AspNetCore.App.Internal.Assets/10.0.5": {
+      "Microsoft.AspNetCore.App.Internal.Assets/10.0.1": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.App.Internal.Assets.props": {},
@@ -15,10 +15,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.App.Internal.Assets/10.0.5": {
-      "sha512": "Oxw9Ps1/nd6c/EMCAI13AeJFEqXezAvCEOshMjUWmL7LeGirHJNzytR2e/3jINYg0j2TmPvNUowGHf+gp8zDSQ==",
+    "Microsoft.AspNetCore.App.Internal.Assets/10.0.1": {
+      "sha512": "rafnWkNfJPA0nCZ5u9bFLiIhCv+aGDWBPJMejuROFMHEpsNhTdv8Cvhv+2jIH+b5485FhndbiwOQJUBMeBa6BQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.app.internal.assets/10.0.5",
+      "path": "microsoft.aspnetcore.app.internal.assets/10.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34,35 +34,43 @@
         "build/Microsoft.AspNetCore.App.Internal.Assets.targets",
         "buildMultiTargeting/Microsoft.AspNetCore.App.Internal.Assets.targets",
         "buildTransitive/Microsoft.AspNetCore.App.Internal.Assets.targets",
-        "microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.app.internal.assets.10.0.1.nupkg.sha512",
         "microsoft.aspnetcore.app.internal.assets.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.5"
+      "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.1"
     ]
   },
   "packageFolders": {
-    "/Users/arran/.nuget/packages/": {}
+    "C:\\Users\\arran\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arran/Desktop/Github-Repos/ToDoListApp/ToDoListApp.csproj",
+      "projectUniqueName": "E:\\.Net Developer Career\\Github Repos\\ToDoListApp\\ToDoListApp.csproj",
       "projectName": "ToDoListApp",
-      "projectPath": "/Users/arran/Desktop/Github-Repos/ToDoListApp/ToDoListApp.csproj",
-      "packagesPath": "/Users/arran/.nuget/packages/",
-      "outputPath": "/Users/arran/Desktop/Github-Repos/ToDoListApp/obj/",
+      "projectPath": "E:\\.Net Developer Career\\Github Repos\\ToDoListApp\\ToDoListApp.csproj",
+      "packagesPath": "C:\\Users\\arran\\.nuget\\packages\\",
+      "outputPath": "E:\\.Net Developer Career\\Github Repos\\ToDoListApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/arran/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\arran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -81,7 +89,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -90,7 +98,7 @@
           "Microsoft.AspNetCore.App.Internal.Assets": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.5, )",
+            "version": "[10.0.1, )",
             "autoReferenced": true
           }
         },
@@ -113,7 +121,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
