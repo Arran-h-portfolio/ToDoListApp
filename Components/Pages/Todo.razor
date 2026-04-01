@@ -1,7 +1,24 @@
 @page "/todo" // This is directive for the page URL
 @rendermode InteractiveServer // This directive specifies that the component can handle UI Events
 
-<h3>Todo</h3>
+@* Header displays a coutn of items still to be done using the .Count method and the bool created in TodoItem.cs *@
+<h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
+
+@* Display the list of todos *@
+<ul>
+    @foreach (var todo in todos)
+    {
+        <input type="checkbox" @bind="todo.IsDone" />
+        <li>@todo.Title</li>
+    }
+</ul>
+
+
+@* newTodo string field bound to the input using @bind directive *@
+<input @bind="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
+
+
 
 @code 
 {
@@ -24,13 +41,10 @@
 
 
 
-@* add button to add items to the list *@
-<input />
-<button>Add todo</button>
 
 
-@* newTodo string field bound to the input using @bind directive *@
-<input @bind="newTodo" />
-<button @onclick="AddTodo">Add todo</button>
+
+
+
 
 
